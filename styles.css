@@ -1,0 +1,180 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.night-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+
+body.night-mode .container {
+  background: #444;
+}
+
+header {
+  background: #28a745;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header button {
+  background: #ffc107;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+header button:hover {
+  background: #e0a800;
+}
+
+main {
+  display: flex;
+  padding: 20px;
+}
+
+.left-column,
+.right-column {
+  width: 50%;
+  padding: 10px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #28a745;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #218838;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f8f9fa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+li button:hover {
+  background: #c82333;
+}
+
+body.night-mode li {
+  background: #555;
+}
+
+body.night-mode li button {
+  background: #e3342f;
+}
+
+body.night-mode li button:hover {
+  background: #c82333;
+}
+/* إضافة التنسيقات الخاصة بصفحة التاريخ */
+.history-section {
+  padding: 20px;
+}
+
+.history-year,
+.history-month,
+.history-day {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.history-year h3,
+.history-month h4,
+.history-day h5 {
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.history-year ul,
+.history-month ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history-year ul {
+  margin-left: 20px;
+}
+
+.history-month ul {
+  margin-left: 40px;
+}

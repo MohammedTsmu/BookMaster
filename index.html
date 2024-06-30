@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMaster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>BookMaster</h1>
+            <button id="toggle-mode">Switch to Night Mode</button>
+        </header>
+        <main>
+            <div class="left-column">
+                <section class="form-section">
+                    <form id="study-form">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                        <input type="number" id="time" placeholder="Time (minutes)" required>
+                        <button type="submit">Add</button>
+                    </form>
+                </section>
+                <section class="list-section">
+                    <h2>Study List</h2>
+                    <ul id="study-list"></ul>
+                    <p>Total Time: <span id="total-time">0</span> minutes</p>
+                    <p>Rewards: <span id="rewards">0</span> points</p>
+                </section>
+            </div>
+            <div class="right-column">
+                <section class="challenges-section">
+                    <h2>Challenges</h2>
+                    <p>Daily Challenge: Read for <span id="daily-goal">60</span> minutes</p>
+                    <p>Weekly Challenge: Read for <span id="weekly-goal">420</span> minutes</p>
+                    <p>Daily Progress: <span id="daily-progress">0</span> minutes</p>
+                    <p>Weekly Progress: <span id="weekly-progress">0</span> minutes</p>
+                </section>
+                <section class="achievements-section">
+                    <h2>Achievements</h2>
+                    <ul id="achievements-list"></ul>
+                </section>
+                <section class="notes-section">
+                    <h2>Book Notes</h2>
+                    <textarea id="book-notes" placeholder="Add your notes here..."></textarea>
+                    <button id="save-notes">Save Notes</button>
+                </section>
+                <section class="stats-section">
+                    <h2>Monthly Statistics</h2>
+                    <p>Total Time This Month: <span id="monthly-total-time">0</span> minutes</p>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
